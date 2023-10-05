@@ -1,7 +1,10 @@
 import cv2
 import numpy as np
 import threading
-from PIL import ImageGrab
+try:
+    from PIL import ImageGrab
+except ImportError:
+    from pyscreenshot import ImageGrab
 
 def simple_ping():
     print( '\a' )
