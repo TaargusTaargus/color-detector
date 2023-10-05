@@ -1,13 +1,13 @@
 import cv2
 import numpy as np
 import threading
-import winsound
 from PIL import ImageGrab
 
-def simple_ping_windows():
-    duration = 100  # milliseconds
-    frequency = 1000  # Hz (adjust for higher or lower pitch)
-    winsound.Beep(frequency, duration)
+def simple_ping():
+    print( '\a' )
+    #duration = 100  # milliseconds
+    #frequency = 1000  # Hz (adjust for higher or lower pitch)
+    #winsound.Beep(frequency, duration)
 
 
 def detect_color_in_screenshot(target_color, image_path=None, tolerance=30):

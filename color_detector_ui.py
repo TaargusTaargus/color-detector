@@ -35,7 +35,7 @@ class ColorDetectorThread( threading.Thread ):
                     coordinates = cd.detect_color_in_screenshot(self.target_color_rgb, tolerance=0)
                     if len( coordinates ):
                         print( f"Detected color at screen coordinate: {coordinates}.", flush = True )
-                        cd.simple_ping_windows()
+                        cd.simple_ping()
 
                 time.sleep( 3 )
             
