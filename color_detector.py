@@ -4,7 +4,7 @@ import threading
 try:
     from PIL import ImageGrab
 except ImportError:
-    from pyscreenshot import ImageGrab
+    import pyscreenshot as ImageGrab
 
 def simple_ping():
     print( '\a' )
